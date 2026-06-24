@@ -41,7 +41,7 @@ else:
 
 @app.route('/health', methods=['GET'])
 def health():
-    return jsonify({'status': 'healthy', 'service': 'edupredictops'}), 200
+return jsonify({'status': 'healthy', 'service': 'edupredictops', 'version': 'v2'}), 200
 
 @app.route('/predict', methods=['POST'])
 def predict():
